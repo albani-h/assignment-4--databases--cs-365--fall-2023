@@ -164,8 +164,6 @@ INSERT INTO contains VALUES (4,11);
 INSERT INTO contains VALUES (4,12);
 INSERT INTO contains VALUES (4,13);
 
-
-
 INSERT INTO contains VALUES(5,1);
 INSERT INTO contains VALUES(5,2);
 INSERT INTO contains VALUES(5,3);
@@ -179,7 +177,6 @@ INSERT INTO contains VALUES(5,10);
 INSERT INTO contains VALUES(5,11);
 INSERT INTO contains VALUES(5,12);
 
-
 INSERT INTO contains VALUES(6,1);
 INSERT INTO contains VALUES(6,2);
 INSERT INTO contains VALUES(6,3);
@@ -191,7 +188,6 @@ INSERT INTO contains VALUES(6,8);
 INSERT INTO contains VALUES(6,9);
 INSERT INTO contains VALUES(6,10);
 INSERT INTO contains VALUES(6,11);
-
 
 INSERT INTO contains VALUES(7,1);
 INSERT INTO contains VALUES(7,2);
@@ -205,5 +201,3 @@ INSERT INTO contains VALUES(7,9);
 INSERT INTO contains VALUES(7,10);
 INSERT INTO contains VALUES(7,11);
 INSERT INTO contains VALUES(7,12);
-
-

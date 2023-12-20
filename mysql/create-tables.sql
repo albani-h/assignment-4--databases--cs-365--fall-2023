@@ -21,11 +21,11 @@ CREATE TABLE IF NOT EXISTS track (
   PRIMARY KEY (album_id,track_id)
 );
 
-CREATE INDEX WasPlayedAT on TRACK (track_id);
+CREATE INDEX WasPlayedAT on ALBUM (album_id);
 CREATE TABLE IF NOT EXISTS played (
   playing_id INT,
   played     TIMESTAMP  NOT NULL,
-  CONSTRAINT WasPlayedAT FOREIGN KEY (playing_id) REFERENCES TRACK (track_id),
+  CONSTRAINT WasPlayedAT FOREIGN KEY (playing_id) REFERENCES ALBUM (ALBUM_ID),
   PRIMARY KEY (played)
 );
 
@@ -36,18 +36,11 @@ CREATE TABLE IF NOT EXISTS compiles(
   FOREIGN KEY (album_id) REFERENCES album(album_id),
   PRIMARY KEY (artist_id,album_id)
 );
-
+CREATE INDEX TRACKINDEX ON TRACK (track_id);
 CREATE TABLE IF NOT EXISTS contains(
   album_id INT NOT NULL,
   track_id INT NOT NULL ,
   FOREIGN KEY (album_id) REFERENCES ALBUM (album_id),
   FOREIGN KEY (track_id) REFERENCES TRACK (track_id),
   PRIMARY KEY (album_id,track_id)
-);
-
-
-CREATE TABLE IF NOT EXISTS WasPlayedAt(
-album_id INT NOT NULL,
-played TIMESTAMP
-PRIMARY KEY (played)
 );
